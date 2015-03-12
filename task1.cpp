@@ -1,12 +1,14 @@
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
    double a, b;
    double m;
 
-   std::cin >> a; // считали первое число
-   std::cin >> b; // считали второе число
+   cin >> a; // считали первое число
+   cin >> b; // считали второе число
 
    // выбрать большее
    if (a > b) {
@@ -15,7 +17,7 @@ int main()
       m = b;
    }
 
-   std::cout << m * 2; // умножили на 2 и напечатали
+   cout << m * 2; // умножили на 2 и напечатали
 
    return 0;
 }
