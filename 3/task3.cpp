@@ -2,20 +2,25 @@
 
 using namespace std;
 
-#define ARRAY_SIZE 100
-
 int main()
 {
-   int array[ARRAY_SIZE];
+   int array[10];
 
-   long long sum = 0;
-   for(int i = 0; i < ARRAY_SIZE; ++i) {
+   cout << "Array:  ";
+   for(int i = 0; i < 10; ++i) { // заполняем цифрами от 1 до 10
+      array[i] = i + 1;
+      cout << array[i] << " ";
+   }
+   cout << endl;
+
+   int sum = 0;
+   for(int i = 0; i < 10; ++i) { // суммируем
       sum += array[i];
    }
 
-   sum %= 2;
-
    cout << "sum: " << sum << endl;
+   cout << "sum % 2: " << sum % 2 << endl;  // остаток от деления на 2
+   cout << "average: " << sum / 10 << endl; // среднее
 
    return 0;
 }
